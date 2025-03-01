@@ -20,9 +20,6 @@ const Hero = () => {
 
           <div className='right-line'></div>
         </div>
-        
-        
-    
 
 </div>
   )
