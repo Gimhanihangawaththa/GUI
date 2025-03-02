@@ -1,5 +1,10 @@
-import react from "react";
+import react, { createContext } from "react";
 
 
 
-export con
+export const shopContext = createContext(null);
+const shopContextProvider = (props)=>{
+
+    const contextvalue ={}
+
+}
