@@ -6,6 +6,7 @@ const Item = (props) => {
         <img src={props.image} alt='' />
        <p>{props.name}</p>
        <div className="item-prices">
+        
         <div className="item-price-new">
         Rs.{props.new_price}
         </div>

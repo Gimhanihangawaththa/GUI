@@ -15,7 +15,7 @@ const Hero = () => {
           <div className='left-line'></div>   
         
           <div className="letters">
-            <h2>NEW ARRIVALS </h2>
+            <h2>#MOONSTRUCK </h2>
           </div>
 
           <div className='right-line'></div>
