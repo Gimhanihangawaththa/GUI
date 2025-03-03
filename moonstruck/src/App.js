@@ -14,13 +14,14 @@ import Footer from './Components/Footer/Footer';
 function App() {
   return (
     <div>
+       
       <BrowserRouter>
       <Navbar/>
       <Routes>
         <Route path='/' element={<Home/>}/>
         <Route path='/SHOP-BY-BRANDS' element={<ShopCategory category='SHOP-BY-BRANDS'/>}/>
-        <Route path='/NEW-ARRIVALS' element={<ShopCategory category='SHOP-BY-BRANDS'/>}/>
-        <Route path='/COLLECTIONS' element={<ShopCategory category='COLLECTIONS'/>}/>
+        <Route path='/NEW-ARRIVALS' element={<ShopCategory  category='NEW-ARRIVALS'/>}/>
+        <Route path='/COLLECTIONS' element={<ShopCategory  category='COLLECTIONS'/>}/>
         <Route path='/product' element={<Product/>}>
           <Route path=':productId' element={<Product/>}/>
         </Route>
