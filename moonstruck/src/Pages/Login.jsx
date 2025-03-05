@@ -1,25 +1,26 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import './CSS/Login.css';
+import './CSS/LoginSignup.css'; 
 
 const Login = () => {
   return (
-    <div className='login'>
-      <div className="login-container">
+    <div className='loginsignup'>
+      <div className="loginsignup-container">
         <h1>Login</h1>
-        <div className="login-fields">
+        <div className="loginsignup-fields">
           <input type="email" placeholder='Email Address' />
           <input type="password" placeholder='Password' />
         </div>
         <button>Login</button>
-        <p className="login-signup">
-          Don't have an account? <Link to="/signup"><span>Sign up here</span></Link>
+        <p className="loginsignup-login">
+          Don't have an account? <Link to="/signup"><span>Sign Up</span></Link>
         </p>
-        <p className="forgot-password">Forgot Password?</p>
+        <div className="loginsignup-agree">
+          <p>Forgot your password? <span>Reset here</span></p>
+        </div>
       </div>
     </div>
   );
 }
 
 export default Login;
-

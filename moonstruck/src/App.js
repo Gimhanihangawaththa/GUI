@@ -1,18 +1,18 @@
-
 import './App.css';
 import Navbar from './Components/Navbar/Navbar';
-import { BrowserRouter,Routes,Route } from 'react-router-dom';
+import { BrowserRouter,Routes,Route} from 'react-router-dom';
 import ShopContextProvider from "./Context/ShopContext";
 import Home from './Pages/Home';
 import ShopCategory from './Pages/ShopCategory';
 import Product from './Pages/Product';
 import Cart from './Pages/Cart';
-import LoginSignup from './Pages/LoginSignup';
+import Login from './Pages/Login';  
+import Signup from './Pages/Signup'; 
 import Footer from './Components/Footer/Footer';
 import brand_banner from './Components/Assets/brand_banner.jpg'
 import newarrivals_banner from './Components/Assets/newarrivals_banner.jpg'
 import collections_banner from './Components/Assets/collections_banner.jpg'
-import Login from './Pages/Login';
+
 
 
 
@@ -31,14 +31,10 @@ function App() {
           <Route path=':productId' element={<Product/>}/>
         </Route>
         <Route path='/Cart' element={<Cart/>}/> 
-        <Route path='/login' element={<LoginSignup/>}/>
-        <Route path='/login' element={<Login />} /> {/* Separate Login Page */}
-       
-       
-           
-       
-        
-      </Routes>
+        <Route path='/login' element={<Login />} /> 
+        <Route path='/signup' element={<Signup />} /> 
+      
+          </Routes>
      <Footer/>
       </BrowserRouter>
       </ShopContextProvider>
@@ -47,3 +43,6 @@ function App() {
 }
 
 export default App;
+
+
+

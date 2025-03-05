@@ -1,7 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import './CSS/LoginSignup.css';
-
+import './CSS/LoginSignup.css';  
 const Signup = () => {
   return (
     <div className='loginsignup'>
@@ -26,4 +25,3 @@ const Signup = () => {
 }
 
 export default Signup;
-
