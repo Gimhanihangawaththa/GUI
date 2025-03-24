@@ -7,19 +7,50 @@ import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   const[menu,setMenu] = useState("HOME");
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+
+
+  const toggleDropdown = () => {
+    setIsDropdownOpen(!isDropdownOpen);
+  };
+
+
   return (
     <div className='navbar'>
 
       <div className='up'>
         <div className="nav-logo">
         <div className="nav-login-cart">
-        <Link to='/login'><button>Login</button></Link>
+
+      
+      <button  style={{color:'#145d31'}}  onClick={toggleDropdown} >Admin
+
+      {isDropdownOpen && (
+              <ul className="dropdown-menu">
+                <Link to="/ProductForm" className='add-item'>
+                <li>Add Items</li>
+                </Link>
+                <Link to="/ProductList" className='add-item'>
+                <li>Product List</li>
+                </Link>
+                
+                
+              </ul>
+            )}
+
+      </button>
+
+        <Link to='/login'></Link>
+
+
+        <Link to='/login'><button style={{color:'#145d31'}}>Login</button></Link>
         <Link to='/Cart'><img src={cart_icon} alt='' /></Link>
         <div className="nav-cart-count">0</div>
       </div>
       </div>
       </div>
-      
+
+  
       <div className="nav-minibar">
       <ul className="nav-menu">
         <li onClick={()=>{setMenu("HOME")}}><Link style={{textDecoration:'none', color:'white'}} to='/'>HOME</Link>{menu==="HOME"?<hr/>:<></>}</li>
@@ -35,3 +66,4 @@ const Navbar = () => {
 }
 
 export default Navbar
+

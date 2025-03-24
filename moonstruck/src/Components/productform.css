@@ -1,0 +1,23 @@
+.product-form-full{
+    background-color: rgb(17, 114, 82);
+    height: 400px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    flex-direction: row;
+}
+.product-form-full h2{
+    font-size: 28px;
+    color: rgb(199, 206, 199);
+
+}
+
+
+.product-form-container {
+    background-color: rgb(17, 114, 82);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}

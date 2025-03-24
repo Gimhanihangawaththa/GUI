@@ -1,0 +1,39 @@
+.product-list-full{
+    /* background-color: aqua; */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.product-list-full h2{
+    color: rgb(33, 59, 60);
+}
+
+
+.product-list-mid{
+    /* background-color: bisque; */
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    
+    
+
+}
+
+.list-img{
+    width: 100%;
+    height: 350px;
+}
+
+.list-item-img{
+    /* background-color: aquamarine; */
+    width: 20%;
+}

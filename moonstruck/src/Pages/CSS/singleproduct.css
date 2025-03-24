@@ -1,0 +1,127 @@
+
+/* Single Product Page Styling */
+.product-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding: 50px;
+    background: #f9f9f9;
+    min-height: 100vh;
+}
+
+/* Product Image Section */
+.product-image img {
+    width: 400px;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+.product-image img:hover {
+    transform: scale(1.05);
+}
+
+/* Product Details Section */
+.product-details {
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Product Title */
+.product-details h2 {
+    font-size: 28px;
+    color: #213B3C;
+    font-weight: bold;
+}
+
+/* Product Price */
+.product-price {
+    font-size: 22px;
+    color: #ff4d4d;
+    font-weight: bold;
+}
+
+/* Product Description */
+.product-description {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.5;
+}
+
+/* Buttons Section */
+.product-actions {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+/* Buy Now Button */
+.buy-now {
+    background: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+.buy-now:hover {
+    background: #d43535;
+}
+
+/* Add to Cart Button */
+.add-to-cart {
+    background: #213B3C;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+.add-to-cart img {
+    width: 20px;
+    height: 20px;
+}
+
+.add-to-cart:hover {
+    background: #176c69;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .product-container {
+        flex-direction: column;
+        text-align: center;
+        gap: 30px;
+    }
+
+    .product-image img {
+        width: 300px;
+    }
+
+    .product-details {
+        width: 90%;
+    }
+
+    .product-actions {
+        flex-direction: column;
+    }
+}
