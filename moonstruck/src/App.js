@@ -15,7 +15,7 @@ import newarrivals_banner from './Components/Assets/newarrivals_banner.jpg'
 import collections_banner from './Components/Assets/collections_banner.jpg'
 import ProductForm from './Components/ProductForm';
 import ProductList from './Components/ProductList';
-// import SingleProduct from './Pages/SingleProduct';
+import SingleProduct from './Pages/SingleProduct';
 
 
 
@@ -32,6 +32,7 @@ function App() {
         <Route path='/SHOP-BY-BRANDS' element={<ShopCategory banner={brand_banner} category='SHOP-BY-BRANDS'/>}/>
         <Route path='/NEW-ARRIVALS' element={<ShopCategory banner={newarrivals_banner}category='NEW-ARRIVALS'/>}/>
         <Route path='/COLLECTIONS' element={<ShopCategory2 banner={collections_banner} category='COLLECTIONS'/>}/>
+        <Route path="/SingleProduct" element={<SingleProduct/>}></Route>
         <Route path="/ProductForm" element={<ProductForm/>}></Route>
         <Route path="/ProductList" element={<ProductList/>}></Route>
         <Route path='/product' element={<Product/>}>
